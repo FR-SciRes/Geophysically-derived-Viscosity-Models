@@ -2,8 +2,11 @@
 The project aims to estimate upper mantle viscosity using seismic and magnetotelluric (MT) observations. Mainly, the user should have either seismic data only or both seismic and MT data to use the codes here. The idea is that temperatures are inferred from seismic data and water contents are inferred from MT data using MATE (see https://doi.org/10.1029/2021JB023824 for MATE reference). Both temperature and water content are then used in calculating viscosity. Thus, constraining temperatures and water contents from observations would also constrain viscosity estimates.
  
 A. Below are the main codes used in this project.
+
 (A.1) Vs_to_T_Conversion_HeFESTo.m --> converts seismic velocities to temperatures (and composition) using the theoretical calculations of HeFESTo (see https://doi.org/10.1029/2021JB023824 for reference on HeFESTo)
+
 (A.2) TotalStrainRate_HK03_fH2O.m --> a function that calculates the total strain rate (= diffusion strain rate + dislocation strain rate + DisGBS strain rate) for certain stress, temperature, water content, grain size and pressure. This function has to be called when calculating viscosity, where viscosity equals stress over strain rate (a user has to write a code for this).
+
 NOTE: These codes have important comments for the user, particularly the inputs. 
 
 B. The following files have to be downloaded together with the codes.
