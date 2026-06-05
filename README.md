@@ -10,12 +10,17 @@ A. Below are the main codes used in this project.
 NOTE: These codes have important comments for the user, particularly the inputs. 
 
 B. The following files have to be downloaded together with the codes.
+
 (B.1) InterpolatedVelocities_allP&T_basalt.56Qcor; InterpolatedVelocities_allP&T_pyrolite.56Qcor; InterpolatedVelocities_allP&T_harzburgite.56Qcor; InterpolatedVelocities_allP&T_olivine.56Qcor
 
 C. Step-by-step process in using the codes.
+
 (C.1) Prepare seismic and MT profiles separately, which contain seismic velocity or electrical conductivity value (from MT) for each depth value. For MT data, refer to MATE as to its instruction and file structure. For seismic data, the user needs to have a file with depths and corresponding velocities (in columns). If the user has velocity ranges, then the file should have both the lower and upper velocity bounds, and potentially average velocities. 
+
 (C.2) Run Vs_to_T_Conversion_HeFESTo.m in MATLAB, where the velocities in step 1 (named as Vs_lo and Vs_up for lower and upper velocity bounds, and Vs_ave for average velocities in my code) will be extracted, and then be converted to temperatures and phases (composition). Check the code for instructions and comments.
+
 (C.3) The temperatures and phases together with electrical conductivities will be the inputs for MATE tool (see reference) to get water content values.
+
 (C.4) Create a short code to calculate viscosity (=stress/total strain rate) using the function TotalStrainRate_HK03_fH2O(). See TotalStrainRate_HK03_fH2O.m for function inputs and outputs. The inputs are temperature, water content, pressure, stress and partial melt.
 
 D. Important citations to include when using the codes.
