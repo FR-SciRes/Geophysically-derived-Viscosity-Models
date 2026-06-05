@@ -9,7 +9,7 @@ A. Below are the main codes used in this project.
 
 NOTE: These codes have important comments for the user, particularly the inputs. 
 
-B. The following files have to be downloaded together with the codes.
+B. The following files have to be downloaded together with the codes. Send a request to me to get these files since they are too big.
 
 (B.1) InterpolatedVelocities_allP&T_basalt.56Qcor; InterpolatedVelocities_allP&T_pyrolite.56Qcor; InterpolatedVelocities_allP&T_harzburgite.56Qcor; InterpolatedVelocities_allP&T_olivine.56Qcor
 
